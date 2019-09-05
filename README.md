@@ -12,8 +12,8 @@ Caso não exista crie o caminho.
 -> Importe este template no seu servidor Zabbix.
 "Template SAP Availability Linux.xml"
 
--> Caso necessário adicione o usuário zabbix no grupo com permissão para
-executar o comando saphostctrl
+-> Adicione o usuário zabbix no grupo com permissão para executar o comando saphostctrl
+"gpasswd -a zabbix sapsys"
 
-Script via linha de comando.
--->
+-> Script via linha de comando.
+check_sap_availability.sh hdbnameserver 00
